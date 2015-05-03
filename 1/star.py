@@ -2,7 +2,6 @@
 
     file : star.py
     author : zeyar Win
-    day : 9 September 2011
     """
 from turtle import *
 def triangle():
