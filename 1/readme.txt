@@ -11,7 +11,7 @@ I put drawS() and drawT() between drawI() and drawG() for making sure function w
 The outputs are RIT TIGERS
 and ENTER THE KEY TO END THE PROGRAM
 There are no no-required output
-In the main() fucntion ,I can change the letter orders for different things 
+In the main() function ,I can change the letter orders for different things 
    
  
 
