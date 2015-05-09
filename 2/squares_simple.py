@@ -20,15 +20,14 @@ def initialization():
     setworldcoordinates(-202,-202,202,202)
   
 
+
   
 
       
     
 
 def main():
-    """
-    
-    wait for the user to press enter to end the program 
+    """ wait for the user to press enter to end the program 
 
     """
     initialization()
@@ -36,7 +35,7 @@ def main():
 
 
 # runs program from here
-# main program
+
 main()
  
     
