@@ -19,6 +19,8 @@ def initialization():
     
     setworldcoordinates(-202,-202,202,202)
   
+def drawSquare2(length,d, c):
+
 
 
 
@@ -34,7 +36,7 @@ def main():
 
     """
     initialization()
- 
+    drawSquare2(200,d, 'green')
 
 
 # runs program from here
