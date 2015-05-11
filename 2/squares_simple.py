@@ -20,7 +20,45 @@ def initialization():
     setworldcoordinates(-202,-202,202,202)
   
 def drawSquare2(length,d, c):
-
+    if d<=0:
+        pass
+    
+    else:
+        
+        if c == 'red' :
+            c = 'green'
+                color('green')
+                    elif c == 'green' :
+                        c = 'red'
+    color('red')
+    up()
+    forward(length/2)
+    left(90)
+    down()
+    forward(length/2)
+    right(180)
+    drawSquare2(length/2, d-1, c)
+    right(90)
+    forward(length)
+    left(180)
+    drawSquare2(length/2, d-1, c)
+    right(90)
+    fd(length)
+    left(180)
+    drawSquare2(length/2, d-1, c)
+    right(90)
+    fd(length/2)
+    up()
+    left(90)
+    fd(length/2)
+    right(90)
+    down()
+    if c == 'red' :
+        c = 'green'
+            color('green')
+                elif c == 'green' :
+                    c = 'red'
+                        color('red')
 
 
 
