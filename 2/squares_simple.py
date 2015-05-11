@@ -20,6 +20,14 @@ def initialization():
     setworldcoordinates(-202,-202,202,202)
   
 def drawSquare2(length,d, c):
+    """
+        
+        draws  3-quarter squares recursively
+        pre-condition penup and facing east
+        post-condition pen down and facing east
+        
+        
+    """
     if d<=0:
         pass
     
