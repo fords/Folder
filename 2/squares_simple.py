@@ -10,7 +10,7 @@ d=int(input("Enter depth"))
 def initialization():
     """
      
-     set the window canvas size
+        set the window canvas size
 
     """
     setup(600,600)
@@ -83,6 +83,9 @@ def main():
     """
     initialization()
     drawSquare2(200,d, 'green')
+    input('press enter')
+    showturtle()
+    bye()
 
 
 # runs program from here
