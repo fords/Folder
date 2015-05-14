@@ -1,9 +1,19 @@
-
+"""
+   Drawing many  squares at the edge of squares
+   file Squrares_simpley.py
+   author : Zeyar Win
+"""
 from turtle import *
 
 	
   
 def drawSquare2(length,d):
+    """
+        Draws 3 quarter squares recursively
+            pre-condition penup and facing east
+            post-condition pen down and facing east
+
+    """
     if d<0:
             return
     if d%2==0:
@@ -44,6 +54,11 @@ def drawSquare2(length,d):
     right(90)
 	   
 def oneSquare(length,d):
+    """
+        draw a full square with many 3 quarter squares
+        precondition : facing east and pen down
+        post condition:facing north and pen down
+    """
     if d<0:
         return
     if d%2==0:
@@ -92,6 +107,10 @@ def oneSquare(length,d):
 
 
 def main():
+	"""
+    wait for the user to press enter to end the program
+
+	"""
 	setup(600,600)
 	pensize(2)
 	speed(0)
