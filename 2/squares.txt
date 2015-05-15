@@ -1,0 +1,7 @@
+I used the simple_squares solution in the squares solution by drawing a full square with the recursive function 
+at the edges of the square.
+I test 0 ,1 and 2 for the right figures
+I test -1 to ensure the program is working right
+It takes about 5min 10 secs 
+
+
