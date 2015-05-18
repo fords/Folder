@@ -1,15 +1,27 @@
+"""draws flowers using turtle
+    file : flower.py
+    author Zeyar Win"""
+
 from turtle import *
 speed(0)
 
 def boxRec(length,side):
+    """ draws a  square
+        precondition : facine east and pen down
+        postcondition: facing east and pen down
+        """
     if side<=0 or length<=0:
         pass
     else:
         fd(length)
         left(90)
         boxRec(length,side-1)
-  
+
 def drawFlowerRec(petal,length,d):
+    """ draws flower using boxRec() recursively
+        pre condtion : facing east and pen down
+        post condition:facing east and pen down
+        """
     if d<=0 or length<=0:
         pass
     else:
@@ -17,13 +29,17 @@ def drawFlowerRec(petal,length,d):
             color('green')
         else:
             color('red')
-
+        
         boxRec(length,4)
         left(360/petal)
         drawFlowerRec(petal,length,d-1)
-    
+
 
 def boxIt(length):
+    """ draws a  square
+        precondition : facine east and pen down
+        postcondition: facing east and pen down
+        """
     side=4
     while side>0:
         fd(length)
@@ -31,6 +47,10 @@ def boxIt(length):
         side =side-1
 
 def drawFlowerIt(petal,length,d):
+    """ draws flower using boxIt() loopingly
+        pre condtion : facing east and pen down
+        post condition:facing east and pen down
+        """
     d=petal
     while d>0 and length>0:
         if d%2==0:
@@ -40,9 +60,10 @@ def drawFlowerIt(petal,length,d):
         boxIt(length)
         left(360/petal)
         d  =d-1
-        
-   
+
+
 def main():
+    """   makes the two functions drawing side by side in the canvas  """
     length =int(input("Enter the size"))
     petal=int(input("Enter the petal no."))
     setup(1000,1000)
