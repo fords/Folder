@@ -5,3 +5,8 @@ Next,I draw a square box using iteration  and I use iteration for drawing a flow
 
 I go to run tab and then click 'run module'
 
+I use size 0 and petal 100 to draw nothing but the turtle moving
+I use size 100 and petal 5
+size 100 and petal 1000
+size -1 and petal 3 and 
+size 100 and petal -3 to check my codes are working
