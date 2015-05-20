@@ -2,3 +2,6 @@ I draw a square box first
 Then use recursive function to draw flower by using square box function
 Then go to another starting point 
 Next,I draw a square box using iteration  and I use iteration for drawing a flower from using the square box function of iteration
+
+I go to run tab and then click 'run module'
+
