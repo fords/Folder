@@ -1,6 +1,5 @@
 
 def isZeroBinaryString(binaryString):
-    
     if len(binaryString)==0:
         return True
     elif binaryString[0]=='1':
@@ -15,7 +14,6 @@ def testIsZeroBinaryString():
     print(isZeroBinaryString('010')==False)
 
 def addOne(binary):
-    
     if len(binary)==0:
         return '1'
     elif binary[0]=='0':
@@ -23,9 +21,15 @@ def addOne(binary):
     else:
         return '0'+addOne(binary[1:])
 
+def testAddOne():
+    print(addOne('00')=='10')
+    print(addOne('')=='1')
+    print(addOne('01')=='11')
+    print(addOne('11')=='001')
+
 def main():
     testIsZeroBinaryString()
-    #testAddOne()
+    testAddOne()
     #testAddBit()
     #testAddBinary()
     #testIntToBinary()
