@@ -27,9 +27,19 @@ def testAddOne():
     print(addOne('01')=='11')
     print(addOne('11')=='001')
 
+
+def addBit(bit,binary):
+    
+    if bit=='0':
+        return binary
+    elif bit=='1':
+        return addOne(binary)
+    else:
+        return ''
+
 def main():
     #testIsZeroBinaryString()
-    testAddOne()
+    #testAddOne()
     #testAddBit()
     #testAddBinary()
     #testIntToBinary()
