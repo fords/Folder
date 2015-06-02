@@ -46,7 +46,7 @@ def testAddBit():
 def main():
     #testIsZeroBinaryString()
     #testAddOne()
-    #testAddBit()
+    testAddBit()
     #testAddBinary()
     #testIntToBinary()
     #testBinaryToInt1()
