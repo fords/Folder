@@ -37,6 +37,12 @@ def addBit(bit,binary):
     else:
         return ''
 
+def testAddBit():
+    print(addBit('1','101')=='011')
+    print(addBit('','11')=='')
+    print(addBit('1','010')=='110')
+    print(addBit('0','010')=='010')
+
 def main():
     #testIsZeroBinaryString()
     #testAddOne()
