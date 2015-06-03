@@ -1,3 +1,9 @@
+"""
+    Using recursion to do binary number adding each other and add one to
+    binary number.There are iterations to invert binary to integer and vice versa
+    filename binary.py
+    
+"""
 
 def isZeroBinaryString(binaryString):
     if len(binaryString)==0:
@@ -29,7 +35,6 @@ def testAddOne():
 
 
 def addBit(bit,binary):
-    
     if bit=='0':
         return binary
     elif bit=='1':
