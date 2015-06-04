@@ -82,6 +82,13 @@ def intToBinary(inte):
         b=b+str(a)
     return b
 
+def testIntToBinary():
+    print(intToBinary(2)=='01')
+    print(intToBinary(6)=='011')
+    print(intToBinary(0)=='')
+    print(intToBinary(8)=='0001')
+
+
 def main():
     #testIsZeroBinaryString()
     #testAddOne()
