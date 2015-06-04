@@ -48,6 +48,14 @@ def testAddBit():
     print(addBit('1','010')=='110')
     print(addBit('0','010')=='010')
 
+def addBinary(binary1,binary2):
+    if len(binary1)==0 and len(binary2)==0:
+        return ''
+    elif len(binary1)==0 and len(binary2)!=0:
+        return binary2[0:]
+    elif len(binary1)!=0  and len(binary2)==0:
+        return binary1[0:]
+
 def main():
     #testIsZeroBinaryString()
     #testAddOne()
