@@ -72,6 +72,16 @@ def testAddBinary():
     print(addBinary('','11')=='11')
     print(addBinary('11','')=='11')
 
+def intToBinary(inte):
+    c=inte
+    b=''
+    a=0
+    while not(c//2==0 and c%2==0):
+        a=c%2
+        c=c//2
+        b=b+str(a)
+    return b
+
 def main():
     #testIsZeroBinaryString()
     #testAddOne()
