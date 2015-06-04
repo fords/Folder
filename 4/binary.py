@@ -66,11 +66,17 @@ def addBinary(binary1,binary2):
     else:
         return
 
+def testAddBinary():
+    print(addBinary('01','11')=='101')
+    print(addBinary('1','110')=='001')
+    print(addBinary('','11')=='11')
+    print(addBinary('11','')=='11')
+
 def main():
     #testIsZeroBinaryString()
     #testAddOne()
     testAddBit()
-    #testAddBinary()
+    testAddBinary()
     #testIntToBinary()
     #testBinaryToInt1()
 
