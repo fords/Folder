@@ -92,9 +92,9 @@ def testIntToBinary():
 def main():
     #testIsZeroBinaryString()
     #testAddOne()
-    testAddBit()
-    testAddBinary()
-    #testIntToBinary()
+    #testAddBit()
+    #testAddBinary()
+    testIntToBinary()
     #testBinaryToInt1()
 
 main()
