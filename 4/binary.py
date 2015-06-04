@@ -55,6 +55,12 @@ def addBinary(binary1,binary2):
         return binary2[0:]
     elif len(binary1)!=0  and len(binary2)==0:
         return binary1[0:]
+    elif binary1[0]=='0' and binary2[0]=='0':
+        return '0'+addBinary(binary1[1:],binary2[1:])
+    elif binary1[0]=='1' and binary2[0]=='0':
+        return '1'+addBinary(binary1[1:],binary2[1:])
+    elif binary1[0]=='0' and binary2[0]=='1':
+        return '1'+addBinary(binary1[1:],binary2[1:])
 
 def main():
     #testIsZeroBinaryString()
