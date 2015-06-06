@@ -105,13 +105,17 @@ def testBinaryToInt1():
     print(binaryToInt1('10')==1)
     print(binaryToInt1('111')==7)
 
+print(addOne('101'))
+print (addBinary('1011','10'))
+print (intToBinary(28))
+print (binaryToInt1('0001'))
 
 def main():
     #testIsZeroBinaryString()
     #testAddOne()
     #testAddBit()
     #testAddBinary()
-    testIntToBinary()
+    #testIntToBinary()
     #testBinaryToInt1()
 
 main()
