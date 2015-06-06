@@ -88,6 +88,16 @@ def testIntToBinary():
     print(intToBinary(0)=='')
     print(intToBinary(8)=='0001')
 
+def binaryToInt1(bi):
+    b=1
+    c=0
+    d=0
+    for word in bi:
+        a= int(bi[d])*b
+        b=b*2
+        c=c+a
+        d+=1
+    return c
 
 def main():
     #testIsZeroBinaryString()
