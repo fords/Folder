@@ -99,6 +99,13 @@ def binaryToInt1(bi):
         d+=1
     return c
 
+def testBinaryToInt1():
+    print(binaryToInt1('')==0)
+    print(binaryToInt1('01')==2)
+    print(binaryToInt1('10')==1)
+    print(binaryToInt1('111')==7)
+
+
 def main():
     #testIsZeroBinaryString()
     #testAddOne()
