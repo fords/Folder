@@ -1,6 +1,5 @@
 
-
-
+import time
 def quickSelect(aList,k):
     if  len(aList)!=0:
         pivot =aList[len(aList)//2]
@@ -23,8 +22,31 @@ def quickSelect(aList,k):
         else:
             return quickSelect(largerList,k-m-count)
 
+def simplisticApproach(filename):
+    location =[]
+    for line in open(filename):
+        line=line.split()
+        location.append(int(line[1]))
+            return location
+                print (location)
+
+
+
 
 def main():
+    total =0
+    start=0
+    
+    filename=input("Enter filename")
+    start=time.clock()
+    print(simplisticApproach(filename))
+    location=   simplisticApproach(filename)
+    med=Median(location)
+    
+    print("median =" ,med)
+    print("sum of distance = ", computeSum( location, med ) )
+    
+    print(time.clock()-start)
 
 main()
 
