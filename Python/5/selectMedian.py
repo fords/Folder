@@ -62,15 +62,15 @@ def main():
     start=time.clock()
     print(simplisticApproach(filename))
     location=   simplisticApproach(filename)
-    #med=Median(location)
+    med=Median(location)
     
-    #print("median =" ,med)
+    print("median =" ,med)
     print("sum of distance = ", computeSum( location, med ) )
     
     print(time.clock()-start)
 
 main()
-
+#20.28899658661558
 
 
 
