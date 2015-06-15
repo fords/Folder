@@ -30,7 +30,14 @@ def simplisticApproach(filename):
             return location
                 print (location)
 
-
+def computeSum( aList, med ):
+    sum=0
+    for inte in aList:
+        if inte>med:
+            sum +=inte-med
+        else:
+            sum+=med-inte
+    return sum
 
 
 def main():
@@ -41,9 +48,9 @@ def main():
     start=time.clock()
     print(simplisticApproach(filename))
     location=   simplisticApproach(filename)
-    med=Median(location)
+    #med=Median(location)
     
-    print("median =" ,med)
+    #print("median =" ,med)
     print("sum of distance = ", computeSum( location, med ) )
     
     print(time.clock()-start)
