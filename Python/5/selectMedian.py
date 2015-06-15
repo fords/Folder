@@ -1,4 +1,9 @@
 
+"""
+    Use python to find the index of the number in the unsorted list
+    filename selectMedian.py
+    author Zeyar Win"""
+
 import time
 def quickSelect(aList,k):
     if  len(aList)!=0:
