@@ -39,6 +39,20 @@ def computeSum( aList, med ):
             sum+=med-inte
     return sum
 
+def Median(location):
+    if len(location)%2==0:
+        index =len(location)//2
+        
+        
+        med1 = int(quickSelect(location,index))
+        med2 = int(quickSelect(location,index-1))
+        med = (med1 + med2)//2
+        return med
+    else:
+        index=len(location)//2
+        print("odd")
+        return quickSelect(location,index)
+
 
 def main():
     total =0
