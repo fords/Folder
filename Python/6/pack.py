@@ -16,6 +16,19 @@ def check(bin1):
         print()
     print()
 
+def readPut(size,name):
+    """read the sizes of the blocks the filename given by user and make a list """
+    blosize=[]
+    filename=name
+    a=open(name).read().strip()
+    
+    for char in a.split(' '):
+        
+        blosize.append(int(char))
+    
+    blosize=sorted(blosize,reverse=True)
+    
+    return blosize
 
 
 
